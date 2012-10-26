@@ -1,0 +1,81 @@
+@import "config.less";
+@import "base.less";
+
+#bgoverlay {
+	display: none;
+	background: @background_color;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 990;
+	.alpha(55);
+	cursor: pointer;
+}
+
+#info {
+	display: none;
+	position: absolute;
+	width: 600px;
+	color: @background_color;
+	background-color: @font_color;
+	z-index: 999;
+	.shadowed;
+	.rounded_corners;
+	padding: 20px;
+}
+
+#content {
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+}
+
+#moreinfo {
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+	text-align: center;
+}
+
+table.header {
+	width: 600px;
+	height: 50px;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.player {
+	width: 100px;
+	font-weight: bold;
+}
+
+.score {
+	width: 50px;
+	text-align: right;
+}
+
+.game_title {
+	width: 300px;
+	text-align: center;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 18pt;
+}
+.subtitle {
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+canvas {
+	margin-top: 10px;
+	border: 2px solid @base_color;
+}
+
+canvas:focus {
+	outline: 0;
+};

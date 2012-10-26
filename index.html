@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Portal Pong</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet/less" type="text/css" href="css/main.less">
+		<script src="js/less.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jcanvas.min.js"></script>
+		<script type="text/javascript" src="js/pong.js"></script>
+	</head>
+
+	<body>
+		<div id="bgoverlay"></div>
+		<div id="info">
+			<p class="subtitle">What is this?</p>
+			<p>
+				This is just a game concept that unites two awesome games into one: <a href="http://en.wikipedia.org/wiki/Pong" target="_blank">Pong</a>, one of the first arcade games ever created, and <a href="http://en.wikipedia.org/wiki/Portal_(video_game)" target="_blank">Portal</a>, one of the most innovative games ever created.
+			</p>
+			<p class="subtitle">How do I play it?</p>
+			<p>
+				<ol>
+					<li>Get a friend, since this is a game for two (or you can play against yourself, which is fun too)</li>
+					<li>The goal is to score a point by having the ball cross over your opponent's racket</li>
+					<li>Hit <b>space</b> to start. Player 1 uses <b>Q</b> to move the racket upward and <b>A</b> for downward. Player 2, respectively, uses <b>P</b> and <b>L</b></li>
+					<li>When the ball is moving right and goes through the blue portal, it comes out of the orange portal and vice-versa.</li>
+					<li>Have fun.</li>
+				</ol>
+			</p>
+			<p class="subtitle">Is that it?</p>
+			<p>
+				Yes. As I said, this is only a concept. If you have any interesting ideas to make it better, you can either share them with me
+				or create your own version. The code is available at <a href="https://github.com/antoniolopes/PortalPong" target="_blank">GitHub</a>.
+			</p>
+			<p class="subtitle">Who implemented this?</p>
+			<p>
+				<a href="http://antoniolopes.info/wp/about-me" target="_blank">This guy.</a>
+			</p>
+			<p align="center">
+				<button id="close_info_button">Close</button>
+			</p>
+		</div>
+		<div id="content">
+			<table class="header">
+				<tr>
+					<td class="player">Player 1</td>
+					<td class="score" id="p1score">0</td>
+					<td class="game_title">
+						<span class="title">Portal Pong<sup>(ß)</sup></span>
+					</td>
+					<td class="player">Player 2</td>
+					<td class="score" id="p2score">0</td>
+				</tr>
+			</table>
+			<canvas id="pong" width="600" height="400" tabindex="1">
+				Looks like your browser doesn't support <b>canvas</b>. Too bad. No <b>Pong</b> for you.
+			</canvas>
+			<div id="moreinfo">
+				<button id="more_info_button">More information</button>
+			</div>
+		</div>
+	</body>
+</html>
